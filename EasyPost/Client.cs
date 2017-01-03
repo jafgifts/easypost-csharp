@@ -4,7 +4,7 @@ using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Reflection;
+//using System.Reflection;
 
 namespace EasyPost {
     public class Client {
@@ -21,9 +21,9 @@ namespace EasyPost {
 
             client = new RestClient(clientConfiguration.ApiBase);
 
-            Assembly assembly = Assembly.GetExecutingAssembly();
-            FileVersionInfo info = FileVersionInfo.GetVersionInfo(assembly.Location);
-            version = info.FileVersion;
+            //Assembly assembly = Assembly.GetExecutingAssembly();
+            //FileVersionInfo info = FileVersionInfo.GetVersionInfo(assembly.Location);
+            version = "2.0.1";
         }
 
         public IRestResponse Execute(Request request) {
