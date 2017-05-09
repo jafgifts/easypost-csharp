@@ -23,7 +23,7 @@ namespace EasyPost {
 
             //Assembly assembly = Assembly.GetExecutingAssembly();
             //FileVersionInfo info = FileVersionInfo.GetVersionInfo(assembly.Location);
-            version = "2.0.1";
+            version = "2.3.1.1";
         }
 
         public IRestResponse Execute(Request request) {
